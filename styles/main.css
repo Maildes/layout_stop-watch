@@ -1,0 +1,53 @@
+@-webkit-keyframes clock-hand {
+  0% {
+    transform-origin: bottom;
+    transform: rotate(0deg); }
+  100% {
+    transform-origin: bottom;
+    transform: rotate(360deg); } }
+
+@keyframes clock-hand {
+  0% {
+    transform-origin: bottom;
+    transform: rotate(0deg); }
+  100% {
+    transform-origin: bottom;
+    transform: rotate(360deg); } }
+
+.clock {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-color: #a9a9a9;
+  border-radius: 50%; }
+  .clock__minutes {
+    position: absolute;
+    height: 40%;
+    top: 10%;
+    width: 2%;
+    background: #dc143c;
+    border-radius: 5px;
+    z-index: 0;
+    -webkit-animation: clock-hand 3600s linear infinite;
+            animation: clock-hand 3600s linear infinite; }
+  .clock__seconds {
+    position: absolute;
+    height: 45%;
+    top: 5%;
+    width: 1.5%;
+    background: #00008b;
+    border-radius: 5px;
+    z-index: 1;
+    -webkit-animation: clock-hand 60s linear infinite;
+            animation: clock-hand 60s linear infinite; }
+  .clock__center {
+    height: 4%;
+    width: 4%;
+    position: absolute;
+    top: 48%;
+    background: #00008b;
+    border-radius: 50%; }
+
+/*# sourceMappingURL=main.css.map */
