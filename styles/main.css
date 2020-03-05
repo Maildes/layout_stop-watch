@@ -14,6 +14,11 @@
     transform-origin: bottom;
     transform: rotate(360deg); } }
 
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; }
+
 .clock {
   display: flex;
   justify-content: center;
